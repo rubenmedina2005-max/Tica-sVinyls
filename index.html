@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <meta name="description" content="Encuentra discos clásicos y nuevos en Tica's Vinyls. Una tienda independiente para amantes de la música en vinilo.">
+    <title>Tica's Vinyls — Discos para escuchar de verdad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="menu-lateral">
+        <a class="logo" href="#inicio" aria-label="Tica's Vinyls, inicio">
+            <img src="img/finallogo.png" alt="Logotipo de Tica's Vinyls">
+        </a>
+        <p class="menu-etiqueta">VINYL · AUDIO · CULTURE</p>
+        <nav aria-label="Navegación principal">
+            <a href="#inicio" class="menu-enlace activo"><span aria-hidden="true">⌂</span>Inicio</a>
+            <a href="#catalogo" class="menu-enlace"><span aria-hidden="true">◉</span>Discos</a>
+            <a href="#generos" class="menu-enlace"><span aria-hidden="true">♫</span>Géneros</a>
+            <a href="#nosotros" class="menu-enlace"><span aria-hidden="true">✳</span>La tienda</a>
+            <a href="#contacto" class="menu-enlace"><span aria-hidden="true">↗</span>Contacto</a>
+        </nav>
+        <div class="nota-tienda">
+            <span class="nota-punto" aria-hidden="true"></span>
+            <p>Discos escogidos<br>para escuchar de verdad.</p>
+        </div>
+        <a class="sidebar-cta" href="mailto:hola@ticasvinyls.com">Hablemos de música <span aria-hidden="true">↗</span></a>
+    </aside>
+
+    <main class="contenido">
+        <section class="hero" id="inicio">
+            <div class="hero-fondo">
+                <img src="img/vinillo2.avif" alt="" fetchpriority="high">
+            </div>
+            <a class="hero-credit" href="#credito-geekcode">Diseño web por <strong>geekCode</strong></a>
+            <div class="hero-contenido">
+                <p class="subtitulo">UNA FORMA DISTINTA DE ESCUCHAR</p>
+                <h1>Vuelve a<br>sentir la música.</h1>
+                <p class="eslogan">Grandes discos, buen sonido y el placer de escuchar sin prisa.</p>
+                <a href="#catalogo" class="boton">Descubrir discos <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section class="catalogo" id="catalogo">
+            <div class="catalogo-cabecera">
+                <div>
+                    <p class="etiqueta">LA COLECCIÓN</p>
+                    <h2>Discos para volver<br>a escuchar.</h2>
+                </div>
+                <p class="catalogo-intro">De clásicos inolvidables a nuevos favoritos: encuentra el sonido que va contigo.</p>
+            </div>
+
+            <div class="catalogo-herramientas">
+                <div class="filtros" id="generos" aria-label="Filtrar discos por género">
+                    <button class="filtro activo" type="button" data-genero="todos" aria-pressed="true">Todos</button>
+                    <button class="filtro" type="button" data-genero="rock" aria-pressed="false">Rock</button>
+                    <button class="filtro" type="button" data-genero="pop" aria-pressed="false">Pop & soul</button>
+                    <button class="filtro" type="button" data-genero="electronica" aria-pressed="false">Electrónica</button>
+                    <button class="filtro" type="button" data-genero="jazz" aria-pressed="false">Jazz</button>
+                </div>
+                <label class="busqueda">
+                    <span aria-hidden="true">⌕</span>
+                    <span class="solo-lectores">Buscar disco o artista</span>
+                    <input type="search" id="buscar-disco" placeholder="Buscar disco o artista" autocomplete="off">
+                </label>
+            </div>
+
+            <p class="resultado-busqueda" id="resultado-busqueda" aria-live="polite"></p>
+            <div class="discos-grid">
+                <article class="disco-card" data-genero="rock" data-busqueda="queen a night at the opera bohemian rhapsody rock">
+                    <a class="disco-enlace" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20Queen%20%E2%80%94%20A%20Night%20at%20the%20Opera" aria-label="Consultar por A Night at the Opera de Queen">
+                        <div class="portada portada-queen">
+                            <span class="portada-titulo">A NIGHT<br>AT THE<br>OPERA</span>
+                            <span class="portada-artista">QUEEN</span>
+                            <span class="disco-vinilo" aria-hidden="true"></span>
+                        </div>
+                        <div class="disco-info">
+                            <div><h3>A Night at the Opera</h3><p>Queen · Rock</p></div>
+                            <span class="disco-flecha" aria-hidden="true">↗</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="disco-card" data-genero="pop" data-busqueda="amy winehouse back to black soul pop">
+                    <a class="disco-enlace" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20Amy%20Winehouse%20%E2%80%94%20Back%20to%20Black" aria-label="Consultar por Back to Black de Amy Winehouse">
+                        <div class="portada portada-amy">
+                            <span class="portada-titulo">BACK<br>TO<br>BLACK</span>
+                            <span class="portada-artista">AMY WINEHOUSE</span>
+                            <span class="disco-vinilo" aria-hidden="true"></span>
+                        </div>
+                        <div class="disco-info">
+                            <div><h3>Back to Black</h3><p>Amy Winehouse · Soul</p></div>
+                            <span class="disco-flecha" aria-hidden="true">↗</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="disco-card" data-genero="electronica" data-busqueda="daft punk random access memories electronica dance">
+                    <a class="disco-enlace" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20Daft%20Punk%20%E2%80%94%20Random%20Access%20Memories" aria-label="Consultar por Random Access Memories de Daft Punk">
+                        <div class="portada portada-daft">
+                            <span class="portada-titulo">RANDOM<br>ACCESS<br>MEMORIES</span>
+                            <span class="portada-artista">DAFT PUNK</span>
+                            <span class="disco-vinilo" aria-hidden="true"></span>
+                        </div>
+                        <div class="disco-info">
+                            <div><h3>Random Access Memories</h3><p>Daft Punk · Electrónica</p></div>
+                            <span class="disco-flecha" aria-hidden="true">↗</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="disco-card" data-genero="rock" data-busqueda="soda stereo cancion animal rock latino">
+                    <a class="disco-enlace" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20Soda%20Stereo%20%E2%80%94%20Canci%C3%B3n%20Animal" aria-label="Consultar por Canción Animal de Soda Stereo">
+                        <div class="portada portada-soda">
+                            <span class="portada-titulo">CANCIÓN<br>ANIMAL</span>
+                            <span class="portada-artista">SODA STEREO</span>
+                            <span class="disco-vinilo" aria-hidden="true"></span>
+                        </div>
+                        <div class="disco-info">
+                            <div><h3>Canción Animal</h3><p>Soda Stereo · Rock latino</p></div>
+                            <span class="disco-flecha" aria-hidden="true">↗</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="disco-card" data-genero="rock" data-busqueda="fleetwood mac rumours rock pop">
+                    <a class="disco-enlace" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20Fleetwood%20Mac%20%E2%80%94%20Rumours" aria-label="Consultar por Rumours de Fleetwood Mac">
+                        <div class="portada portada-fleetwood">
+                            <span class="portada-titulo">RUMOURS</span>
+                            <span class="portada-artista">FLEETWOOD MAC</span>
+                            <span class="disco-vinilo" aria-hidden="true"></span>
+                        </div>
+                        <div class="disco-info">
+                            <div><h3>Rumours</h3><p>Fleetwood Mac · Rock</p></div>
+                            <span class="disco-flecha" aria-hidden="true">↗</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="disco-card" data-genero="jazz" data-busqueda="miles davis kind of blue jazz">
+                    <a class="disco-enlace" href="mailto:hola@ticasvinyls.com?subject=Consulta%20por%20Miles%20Davis%20%E2%80%94%20Kind%20of%20Blue" aria-label="Consultar por Kind of Blue de Miles Davis">
+                        <div class="portada portada-miles">
+                            <span class="portada-titulo">KIND<br>OF<br>BLUE</span>
+                            <span class="portada-artista">MILES DAVIS</span>
+                            <span class="disco-vinilo" aria-hidden="true"></span>
+                        </div>
+                        <div class="disco-info">
+                            <div><h3>Kind of Blue</h3><p>Miles Davis · Jazz</p></div>
+                            <span class="disco-flecha" aria-hidden="true">↗</span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <p class="sin-resultados" id="sin-resultados" hidden>No encontramos discos con esa búsqueda. Prueba con otro artista o género.</p>
+            <div class="catalogo-pie">
+                <span>¿Buscas algo en particular?</span>
+                <a href="#contacto">Te ayudamos a encontrarlo <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section class="manifiesto" id="nosotros">
+            <div class="manifiesto-imagen">
+                <img src="img/vinilo.jpeg" alt="Primer plano de un disco de vinilo en un tocadiscos" loading="lazy">
+            </div>
+            <div class="manifiesto-texto">
+                <p class="etiqueta">MÁS QUE UNA TIENDA</p>
+                <h2>Para quienes todavía <em>escuchan</em> los álbumes.</h2>
+                <p>Nos gustan las portadas grandes, el sonido cálido y ese pequeño ritual de poner un disco. Por eso reunimos música de distintas épocas y estilos, elegida para disfrutarla de verdad.</p>
+                <a href="#contacto" class="enlace-subrayado">Cuéntanos qué estás buscando <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <p class="etiqueta">TU PRÓXIMO DISCO TE ESPERA</p>
+            <h2>¿Qué te gustaría <em>escuchar?</em></h2>
+            <p>Pregúntanos por disponibilidad, recomendaciones o ese álbum que llevas tiempo buscando.</p>
+            <a href="mailto:hola@ticasvinyls.com" class="boton boton-claro">Hablemos de música <span aria-hidden="true">↗</span></a>
+            <span class="contacto-correo">hola@ticasvinyls.com</span>
+        </section>
+
+        <footer>
+            <a href="#inicio" class="footer-marca">TICA'S <span>VINYLS</span></a>
+            <p>Una buena canción siempre merece otra vuelta. © 2026</p>
+            <div class="footer-final">
+                <span class="footer-credit" id="credito-geekcode">Diseño y desarrollo por <strong>geekCode</strong></span>
+                <a href="#inicio" class="volver-arriba">Volver arriba ↑</a>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        const filtros = document.querySelectorAll(".filtro");
+        const discos = document.querySelectorAll(".disco-card");
+        const buscar = document.querySelector("#buscar-disco");
+        const sinResultados = document.querySelector("#sin-resultados");
+        const resultadoBusqueda = document.querySelector("#resultado-busqueda");
+        let generoActivo = "todos";
+
+        function actualizarDiscos() {
+            const termino = buscar.value.trim().toLocaleLowerCase("es");
+            let visibles = 0;
+
+            discos.forEach((disco) => {
+                const coincideGenero = generoActivo === "todos" || disco.dataset.genero === generoActivo;
+                const coincideTexto = disco.dataset.busqueda.includes(termino);
+                const mostrar = coincideGenero && coincideTexto;
+
+                disco.hidden = !mostrar;
+                visibles += mostrar ? 1 : 0;
+            });
+
+            sinResultados.hidden = visibles !== 0;
+            resultadoBusqueda.textContent = termino ? `${visibles} ${visibles === 1 ? "disco encontrado" : "discos encontrados"}` : "";
+        }
+
+        filtros.forEach((filtro) => {
+            filtro.addEventListener("click", () => {
+                generoActivo = filtro.dataset.genero;
+                filtros.forEach((opcion) => {
+                    const activo = opcion === filtro;
+                    opcion.classList.toggle("activo", activo);
+                    opcion.setAttribute("aria-pressed", String(activo));
+                });
+                actualizarDiscos();
+            });
+        });
+
+        buscar.addEventListener("input", actualizarDiscos);
+
+        const enlacesMenu = document.querySelectorAll(".menu-enlace");
+        enlacesMenu.forEach((enlace) => {
+            enlace.addEventListener("click", () => {
+                enlacesMenu.forEach((opcion) => opcion.classList.toggle("activo", opcion === enlace));
+            });
+        });
+
+        const seccionesMenu = [...enlacesMenu]
+            .map((enlace) => document.querySelector(enlace.getAttribute("href")))
+            .filter(Boolean);
+
+        const observadorSecciones = new IntersectionObserver((entradas) => {
+            const visible = entradas
+                .filter((entrada) => entrada.isIntersecting)
+                .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+            if (!visible) return;
+
+            enlacesMenu.forEach((enlace) => {
+                enlace.classList.toggle("activo", enlace.getAttribute("href") === `#${visible.target.id}`);
+            });
+        }, { rootMargin: "-20% 0px -65% 0px", threshold: [0, 0.25, 0.5] });
+
+        seccionesMenu.forEach((seccion) => observadorSecciones.observe(seccion));
+    </script>
+</body>
+</html>
